@@ -278,8 +278,7 @@
       <OrchestrationSteps>
         <OrchestrationStep Order="1" Type="CombinedSignInAndSignUp" ContentDefinitionReferenceId="api.signuporsignin">
           <ClaimsProviderSelections>
-            <ClaimsProviderSelection TargetClaimsExchangeId="AADExchange" />              
-            <ClaimsProviderSelection TargetClaimsExchangeId="GoogleExchange" />          
+            <ClaimsProviderSelection TargetClaimsExchangeId="AADExchange" />                     
             <ClaimsProviderSelection ValidationClaimsExchangeId="LocalAccountSigninEmailExchange" />
           </ClaimsProviderSelections>
           <ClaimsExchanges>
@@ -294,8 +293,7 @@
             </Precondition>
           </Preconditions>
           <ClaimsExchanges>
-            <ClaimsExchange Id="AADExchange" TechnicalProfileReferenceId="Common-AAD" />           
-            <ClaimsExchange Id="GoogleExchange" TechnicalProfileReferenceId="Google-OAUTH" />          
+            <ClaimsExchange Id="AADExchange" TechnicalProfileReferenceId="Common-AAD" />                 
           </ClaimsExchanges>
         </OrchestrationStep>  
         <OrchestrationStep Order="3" Type="ClaimsExchange">
@@ -385,8 +383,7 @@
       <OrchestrationSteps>
         <OrchestrationStep Order="1" Type="CombinedSignInAndSignUp" ContentDefinitionReferenceId="api.signinonly">
           <ClaimsProviderSelections>
-            <ClaimsProviderSelection TargetClaimsExchangeId="AADExchange" />                  
-            <ClaimsProviderSelection TargetClaimsExchangeId="GoogleExchange" />          
+            <ClaimsProviderSelection TargetClaimsExchangeId="AADExchange" />                      
             <ClaimsProviderSelection ValidationClaimsExchangeId="LocalAccountSigninEmailExchange" />
           </ClaimsProviderSelections>
           <ClaimsExchanges>
@@ -401,8 +398,7 @@
             </Precondition>
           </Preconditions>
           <ClaimsExchanges>
-            <ClaimsExchange Id="AADExchange" TechnicalProfileReferenceId="Common-AAD" />           
-            <ClaimsExchange Id="GoogleExchange" TechnicalProfileReferenceId="Google-OAUTH" />          
+            <ClaimsExchange Id="AADExchange" TechnicalProfileReferenceId="Common-AAD" />               
           </ClaimsExchanges>
         </OrchestrationStep>  
         <OrchestrationStep Order="3" Type="ClaimsExchange">
@@ -475,15 +471,13 @@
       <OrchestrationSteps>
         <OrchestrationStep Order="1" Type="ClaimsProviderSelection" ContentDefinitionReferenceId="api.idpselections">
           <ClaimsProviderSelections>
-            <ClaimsProviderSelection TargetClaimsExchangeId="AADExchange" />                  
-            <ClaimsProviderSelection TargetClaimsExchangeId="GoogleExchange" />          
+            <ClaimsProviderSelection TargetClaimsExchangeId="AADExchange" />                        
             <ClaimsProviderSelection ValidationClaimsExchangeId="LocalAccountSigninEmailExchange" />
           </ClaimsProviderSelections>
         </OrchestrationStep>
         <OrchestrationStep Order="2" Type="ClaimsExchange">
           <ClaimsExchanges>
             <ClaimsExchange Id="AADExchange" TechnicalProfileReferenceId="Common-AAD" />           
-            <ClaimsExchange Id="GoogleExchange" TechnicalProfileReferenceId="Google-OAUTH" />     
             <ClaimsExchange Id="LocalAccountSigninEmailExchange" TechnicalProfileReferenceId="SelfAsserted-LocalAccountSignin-Email" />
           </ClaimsExchanges>
         </OrchestrationStep>
