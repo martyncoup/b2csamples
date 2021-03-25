@@ -96,6 +96,7 @@
         </TechnicalProfile>  
       </TechnicalProfiles>
     </ClaimsProvider>
+	</ClaimsProviders>
 
   <UserJourneys>
     <UserJourney Id="Invitation">
