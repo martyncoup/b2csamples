@@ -69,8 +69,7 @@
       <OrchestrationSteps>
         <OrchestrationStep Order="1" Type="CombinedSignInAndSignUp" ContentDefinitionReferenceId="api.signuporsignin">
           <ClaimsProviderSelections>
-            <ClaimsProviderSelection TargetClaimsExchangeId="AADExchange" />                  
-            <ClaimsProviderSelection TargetClaimsExchangeId="GoogleExchange" />                    
+            <ClaimsProviderSelection TargetClaimsExchangeId="AADExchange" />                                   
             <ClaimsProviderSelection ValidationClaimsExchangeId="LocalAccountSigninEmailExchange" />
           </ClaimsProviderSelections>
           <ClaimsExchanges>
@@ -85,8 +84,7 @@
             </Precondition>
           </Preconditions>
           <ClaimsExchanges>
-            <ClaimsExchange Id="AADExchange" TechnicalProfileReferenceId="Common-AAD" />             
-            <ClaimsExchange Id="GoogleExchange" TechnicalProfileReferenceId="Google-OAUTH" />          
+            <ClaimsExchange Id="AADExchange" TechnicalProfileReferenceId="Common-AAD" />                      
             <ClaimsExchange Id="SignUpWithLogonEmailExchange" TechnicalProfileReferenceId="LocalAccountSignUpWithLogonEmail" />
           </ClaimsExchanges>
         </OrchestrationStep>
